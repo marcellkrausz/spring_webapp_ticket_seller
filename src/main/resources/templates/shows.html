@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Shows</title>
+</head>
+<body>
+<h1>Shows List</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="show : ${shows}">
+        <td th:text="${show.id}">123</td>
+        <td th:text="${show.name}">Joe</td>
+        <td th:text="${show.date}">Buck</td>
+        <td th:text="${show.description}">Buck</td>
+    </tr>
+</table>
+
+</body>
+</html>
